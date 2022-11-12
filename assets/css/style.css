@@ -145,3 +145,161 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+#hero {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/hero-bg.jpg) top center;
+  background-size: cover;
+}
+
+#banner-discord {
+  background-color: var(--discord-color);
+  padding: 5px;
+  width: 260px;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  transform: translate(180px);
+  transition: 0.5s;
+
+}
+
+#banner-discord:hover {
+  transform: translate(0px);
+  transition: 0.5s;
+}
+
+/* Background Video */
+video#bgvideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 120%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  /* background: url(placeholder.jpg) no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Volume Mute Controller */
+#mute {
+  -webkit-media-mute-buttonappearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  left: 2%;
+  bottom: 4%;
+}
+
+/*  */
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+#hero .hero-logo {
+  /* margin: 20px; */
+}
+
+#hero .hero-logo img {
+  width: 100%;
+}
+
+#hero .hero-container {
+  background: rgba(0, 0, 0, 0.7);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#hero h1 {
+  /* margin: 30px 0 10px 0; */
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#hero h2 {
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+#hero h2 span {
+  color: #fff;
+  transition: 0.3s;
+  border-bottom: 2px solid var(--primary);
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  #hero h2 .rotating {
+    display: block;
+  }
+}
+
+#hero .rotating>.animated {
+  display: inline-block;
+}
+
+#hero .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+#hero .btn-get-started {
+  background: var(--primary);
+  border: 2px solid var(--primary-hover);
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-services {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-services:hover {
+  background: var(--primary);
+  border: 2px solid var(--primary-hover);
+}
