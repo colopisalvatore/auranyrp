@@ -585,3 +585,86 @@ video#bgvideo {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Common
+--------------------------------*/
+section {
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title-divider {
+  width: 100px;
+  height: 3px;
+  background: var(--primary-hover);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Get Started Section
+--------------------------------*/
+#about {
+  padding: 80px 0;
+  background-color: var(--dark-hover);
+  background-image: url("../img/about-image.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#about .about-img {
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+#about .about-img img {
+  max-width: 90%;
+  height: 50%;
+}
+
+#about span {
+  color: var(--primary-hover);
+}
+
+#about .about-content {
+  /* background: var(--dark); */
+  transition: all 0.4s ease-in-out;
+}
+
+#about .about-title {
+  font-weight: 700;
+  font-size: 62px;
+}
+
+#about .about-text {
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#about .about-text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
